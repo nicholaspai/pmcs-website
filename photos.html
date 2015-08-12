@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <!-- METADATA -->
+    <meta charset="utf-8">
+    <meta name="Author" content="Hayk Martirosyan">
+    <meta name="Description" content="Princeton Men's Club Soccer, a group of elite soccer players who compete with colleges all over the northeastern United States and beyond.">
+    <meta name="Keywords" content="Princeton, Club Soccer, Sujx, Soccer">
+
+    <title>Princeton Men's Club Soccer</title>
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"  />
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+    <div class="container container-main">
+      <div id="header"></div>
+      <div id="navbar"></div>
+
+      <div class="row row-content">
+        <div class="content span12">
+
+          <div class="main_text">
+            <p></p><h3><center>Photo Gallery</center></h3><p></p>
+            <p><h4><center>Here we will showcase memorable moments in our club's history. We take pride in our involvement on the field, around campus, and after graduation. Check back here to see what we've been up to!</center></h4></p>
+
+            <center><img src="images/JoePynePrize.jpg"><br>
+            Joe Barrett '14 receives the Pyne Prize, Princeton's highest academic honor. He is pictured with University President, Chris Eisgruber, and co-winner, Izzy Kasdin '14.</center><br>
+
+            <img src="images/tryouts2013.JPG"><br>
+            <center>We had over 110 players attend tryouts for our A and B teams. In 2013, we added a practice squad so that any interested soccer players have a chance to play with our balls and turf facilities. </center><br>
+
+            <br>
+            <img src="images/sethLP.JPG"><br>
+            <center>A team captain, Seth Forsgren '14, playing the guitar at Colonial during Fall Lawn Parties.</center>
+            <br>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      render_template('templates/header.html', 'header');
+      render_template('templates/navbar.html', 'navbar', {page: 'photos'});
+      render_template('templates/footer.html', 'footer');
+    </script>
+  </body>
+</html>

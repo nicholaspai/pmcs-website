@@ -1,0 +1,131 @@
+<html lang="en">
+	<head>
+		<!-- METADATA -->
+		<meta charset="utf-8">
+		<meta name="Author" content="Hayk Martirosyan">
+		<meta name="Description" content="Princeton Men's Club Soccer, a group of elite soccer players who compete with colleges all over the northeastern United States and beyond.">
+		<meta name="Keywords" content="Princeton, Club Soccer, Sujx, Soccer">
+
+		<title>Princeton Men's Club Soccer</title>
+		<link rel="icon" type="image/png" href="images/favicon.ico">
+
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"  />
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+		<div class="container container-main">
+			<div id="header"></div>
+			<div id="navbar"></div>
+
+			<div class="row row-content">
+				<div class="content span12">
+					<p class="well">
+						<b><font size="4">Welcome</font></b> to the Princeton Men's Club
+						Soccer website! We are a group of elite soccer players who compete with
+						colleges all over the northeastern United States and beyond. If you
+						are interested in our club, please read more <a href="about.html">about us</a> and feel free to <a href="mailto:pmcs_officers@googlegroups.com" target="_blank">contact us</a>
+						if you have any questions.
+					</p>
+
+					<div id="myCarousel" class="carousel slide center">
+						<div class="carousel-inner">
+							<div class="item active">
+							<img src="images/LPFall2013.JPG">
+							<div class="carousel-caption">
+								<h4>Lawn Parties Fall 2013</h4>
+								<p>The team before the main act at fall lawnparties.</p>
+							</div>
+							</div>
+							<div class="item">
+							<img src="images/ivies2013.JPG">
+							<div class="carousel-caption">
+								<h4>Ivy League Tournament 2013</h4>
+								<p>The Ivy League Squad played in freezing rain at Cornell this fall.</p>
+							</div>
+							</div>
+							<div class="item">
+							<img src="images/formal_2012.png">
+							<div class="carousel-caption">
+								<h4>Formals 2012</h4>
+								<p>The club getting together at Spring lawnparties to celebrate the end of the year.</p>
+							</div>
+							</div>
+							<div class="item">
+							<img src="images/tough_mudder_2012.jpg">
+							<div class="carousel-caption">
+								<h4>Tough Mudder, PA 2012</h4>
+								<p>Some of us recuperate after finishing a grueling 13 mile obstacle course race.</p>
+							</div>
+							</div>
+							<div class="item">
+							<img src="images/b_goldstein.jpg">
+							<div class="carousel-caption">
+								<h4>The B team after a 2-win day.</h4>
+								<p>Our B team after beating the Montclair A and B teams in the same day. Photo by Cheryl Goldstein, mother of David '17.</p>
+							</div>
+							</div>
+
+						</div>
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+					</div>
+
+					<!--TRYOUTS SECTION-->
+					<div class="tryout-registration center">
+						<center>
+						<font color = black> Click <a href="https://docs.google.com/a/princeton.edu/forms/d/1RRZ0DA1hVvXJh9VNm6pHlwEHOwBJuGpePG50JPtg7lw/viewform?usp=send_form"><font color = "#FFA52F">here</font></a> for 2014-15 tryout registration! All new and returning members of the club must register here. We strongly encourage all players to attend all three days.</font>
+					</div>
+
+					<div class="alert alert-info tryout-alert">
+						<div>
+							<center><table class="tryout-table">
+								<tr><center> <font size=4 color="black"><b>Tryout Schedule </b></font></center></tr>
+								<tr>
+									<td>Tuesday</td>
+									<td>Sept 9</td>
+									<td>5pm-7pm</td>
+									<td>Sherrerd Field, 1952 Stadium</td>
+								</tr>
+								<tr>
+									<td>Wednesday</td>
+									<td>Sept 10</td>
+									<td>5pm-7pm</td>
+									<td>Sherrerd Field, 1952 Stadium</td>
+								</tr>
+								<tr>
+									<td>Thursday</td>
+									<td>Sept 11</td>
+									<td>7pm-9pm</td>
+									<td>Sherrerd Field, 1952 Stadium</td>
+								</tr>
+							</table></center>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="footer"></div>
+		</div>
+
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.js"></script>
+		<script src="js/handlebars.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			$(function () {
+					$('.carousel').carousel({interval: 10000}).carousel('cycle');
+			});
+		</script>
+
+		<script>
+			render_template('templates/header.html', 'header');
+			render_template('templates/navbar.html', 'navbar', {page: 'home'});
+			render_template('templates/footer.html', 'footer');
+		</script>
+	</body>
+</html>

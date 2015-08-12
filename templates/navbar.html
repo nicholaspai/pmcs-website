@@ -1,0 +1,39 @@
+<div class="row row-navbar">
+  <div class="navbar navbar-inverse span12">
+    <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li id="navbar-home">
+        <a href="home.html">Home</a>
+        </li>
+        <li id="navbar-about">
+        <a href="about.html">About Us</a>
+        </li>
+        <li id="navbar-team">
+        <a href="team.html">Officers</a>
+        </li>
+        <li id="navbar-games">
+        <a href="games.html">Schedule</a>
+        </li>
+        <li id="navbar-directions">
+        <a href="directions.html">Directions</a>
+        </li>
+        <li id="navbar-photos">
+        <a href="photos.html">Photos</a>
+        </li>
+       </ul>
+       <ul class="nav pull-right">
+        <li id="navbar-contact">
+        <a href="mailto:pmcs_officers@googlegroups.com" target="_blank">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    $(function() {
+      $('#navbar-{{ page }}').addClass('active');
+    });
+  </script>
+</div>

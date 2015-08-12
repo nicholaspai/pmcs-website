@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <!-- METADATA -->
+    <meta charset="utf-8">
+    <meta name="Author" content="Hayk Martirosyan">
+    <meta name="Description" content="Princeton Men's Club Soccer, a group of elite soccer players who compete with colleges all over the northeastern United States and beyond.">
+    <meta name="Keywords" content="Princeton, Club Soccer, Sujx, Soccer">
+
+    <title>Princeton Men's Club Soccer</title>
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"  />
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+    <div class="container container-main">
+      <div id="header"></div>
+      <div id="navbar"></div>
+
+      <div class="row row-content">
+        <div class="content span12">
+
+          <div class="main_text">
+            <p></p><h2>Getting to Campus</h2><p></p>
+            <p>The Princeton University Men's Club Soccer team currently practices and plays all of its games at the West Windsor fields.
+            The fields are located just south of campus on the other side of the Carnegie Canal and across from the Princeton boat house.
+            The address is:</p>
+            <p><i>1 Tiger Lane<br>Princeton, NJ 08544</i></p>
+            <p></p><h3>FROM PHILADELPHIA DELAWARE MARYLAND ETC</h3>
+            <font size="2">Take Route 95 North into New Jersey. Staying on Route 95 North proceed to exit 8B Princeton Pike North Take Princeton Pike (Mercer St)
+            until you reach a 25 MPH speed zone. Proceed on Mercer St down the hill and up the hill and through the next light.
+            Take your next right onto Alexander Street. Proceed on Alexander St until you reach the second light Make a left onto Faculty Road.
+            Make a right at the next light and cross over the bridge. Make the next left proceed up the hill and the fields are on the right
+            just past the first fence.</font><p></p>
+            <p></p><h3>FROM THE NORTH</h3>
+            <font size="2">NJ Turnpike South to Exit 9 New Brunswick After the toll booth use a booth on the far right turn right onto
+            the ramp to Highway 18 North Soon after turn into the lefthand fork of the road staying in the right lane (you will see a Bennigans
+            Restaurant ahead to your right as your bear left) You will immediately bear right for an obscured exit to US 1 South Trenton These
+            3 turns occur in rapid succession to be careful Follow US 1 about 18 miles to the exit at Route 571 Washington Road Turn right and
+            follow Washington Road Route 571 until you see soccer fields on your right and then make a right just past the fields Follow this
+            road next to the soccer fields until you come to the right fields just past the first fence.</font><p></p>
+            <p></p><h3>FROM THE SOUTH</h3>
+            <font size="2">NJ Turnpike North to Exit 8 Hightstown Turn left onto Highway 33 after exiting the turnpike follow signs for
+            Route 571 Continue for approx 12 miles on Route 571 until you reach the intersection of Route 1 Continue straight on Route 571
+            across US 1 Once you cross the intersection Route 571 becomes Washington Road Continue on Washington Road until you see soccer
+            fields on your right and then make a right just past the fields Follow this road next to the soccer fields until you come to the
+            rughy fields just past the first fence.</font><p></p>
+
+            <p></p><h2>Fields on Campus</h2><p></p>
+
+            <p> This year, we have moved most of our games onto a variety of turf fields around campus. The links below will direct you to campus maps of them that will help you once you get here. Please contact our president, Chandler Gay, if you do not know which field our game is on. </p>
+          <p>
+            <a href="http://etcweb.princeton.edu/pumap/#5071" target="_blank"><font color = #F46F1B> <span style="background-color: #000000"> Class of 1952 Stadium (Sherrerd Field) </span></font></a></p><p>
+            <a href="http://etcweb.princeton.edu/pumap/#5090" target="_blank"><font color = #F46F1B> <span style="background-color: #000000"> Campbell/Finney Fields</span></font></a></p><p>
+            <a href="http://etcweb.princeton.edu/pumap/#5076" target="_blank"><font color = #F46F1B> <span style="background-color: #000000"> Roberts Stadium (Plummer Field)</span></font></a></p><p>
+            <a href="http://etcweb.princeton.edu/pumap/#5029" target="_blank"><font color = #F46F1B> <span style="background-color: #000000"> Princeton Stadium (Powers Field)</span></font></a></p><p>
+          </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      render_template('templates/header.html', 'header');
+      render_template('templates/navbar.html', 'navbar', {page: 'directions'});
+      render_template('templates/footer.html', 'footer');
+    </script>
+  </body>
+</html>

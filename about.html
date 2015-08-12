@@ -1,0 +1,64 @@
+<html lang="en">
+	<head>
+		<!-- METADATA -->
+		<meta charset="utf-8">
+		<meta name="Author" content="Hayk Martirosyan">
+		<meta name="Description" content="Princeton Men's Club Soccer, a group of elite soccer players who compete with colleges all over the northeastern United States and beyond.">
+		<meta name="Keywords" content="Princeton, Club Soccer, Sujx, Soccer">
+
+		<title>Princeton Men's Club Soccer</title>
+		<link rel="icon" type="image/png" href="/images/favicon.ico">
+
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"  />
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+		<div class="container container-main">
+			<div id="header"></div>
+			<div id="navbar"></div>
+
+			<div class="row row-content">
+				<div class="content span12">
+
+					<div class="main_text">
+						<p></p><h3>What is the Princeton Men's Club Soccer Team?</h3><p></p>
+						<p>The Princeton Men's Club Soccer Team (PMCS) is an officially recognized Princeton Club Sport designed for players who are not playing for the
+						Princeton varsity soccer team but have played at a high level throughout high school and are looking for an opportunity to continue doing so in college.
+						Any enrolled Princeton student is encouraged to tryout for the team during the annual tryouts held in the fall. The club is comprised of three squads:</p></div>
+
+						<p><b> A Team:</b> This is the club's most competitive squad. This team competes against the top squads from other schools and at the Ivy League Tournament. Practice attendance and performance are both expected and determinant of playing time in competitive matches. </p>
+						<p> <b>B Team:</b> The club's second competitive squad is also composed of elite players. Attendance at practice is still expected. Top-performing players from the B team may be called up to th A Team for league games as well as the Ivy League Tournament.</p>
+						<p> <b>Practice Squad:</b> The practice squad is a non-competitive option the club offers for players who do not qualify for the A or B teams. There are no cuts for this team. The practice squad meets once a week for pickup games using the club's equipment and facilities. Top-performing practice squad players have been called up to the competitive squads in the past, and will have an advantage over their classmates at tryouts the following years.</p>
+
+						<br>
+						<img src="images/climbing-shoot.jpg"><br>
+						<center>Some of our officers displaying our balls, tanks, and flag before our Dean's Date Spring 2013 Celebration.</center>
+						<br>
+						<p></p><h3>Membership</h3><p></p>
+						<p>If you are selected for the A or B team the commitment during the fall typically consists of three practices per week with a game on the weekend. Typically, Saturday night is when the team gets together and celebrates
+						a week of hard work. During the winter season, practices are optional and are held two nights a week in Dillon gym. The normal practice schedule resumes in the Spring. The practice squad meets once per week and does not participate in any social activities with the club.</p>
+						<!--<p> Upon joining the team, you will need to pay a one time membership fee of around $50 which will cover the year's expenses related to travel, league fees, team
+						gatherings, etc. </p>-->
+						<p><b></b></p><center><b>Overall, if selected to the team, you will become part of a proud tradition of soccer, friendship and fun.</b></center><p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer"></div>
+
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.js"></script>
+		<script src="js/handlebars.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			render_template('templates/header.html', 'header');
+			render_template('templates/navbar.html', 'navbar', {page: 'about'});
+			render_template('templates/footer.html', 'footer');
+		</script>
+	</body>
+</html>

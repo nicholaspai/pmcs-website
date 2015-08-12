@@ -1,0 +1,104 @@
+<html lang="en">
+	<head>
+		<!-- METADATA -->
+		<meta charset="utf-8">
+		<meta name="Author" content="Hayk Martirosyan">
+		<meta name="Description" content="Princeton Men's Club Soccer, a group of elite soccer players who compete with colleges all over the northeastern United States and beyond.">
+		<meta name="Keywords" content="Princeton, Club Soccer, Sujx, Soccer">
+
+		<title>Princeton Men's Club Soccer</title>
+		<link rel="icon" type="image/png" href="/images/favicon.ico">
+
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"  />
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+		<div class="container container-main">
+			<div id="header"></div>
+			<div id="navbar"></div>
+
+			<div class="row row-content">
+				<div class="content span12">
+
+					<div class="officer-grid">
+						<div class="row row-fluid">
+							<div class="officer-header span12">
+								<h2>The Officers</h2>
+								<h3>We work hard to keep this club winning on and off the field!</h3>
+							</div>
+						</div>
+						<div class="row-officer row-fluid">
+							<div class="span4">
+								<h3>Rafael Saíz Garcia '15</h3>
+								<h5>Captain</h3>
+								<img src="images/Rafa.jpg">
+							</div>
+							<div class="span4">
+								<h3>Guillaume Delépine '15</h3>
+								<h5>Captain</h3>
+								<img src="images/GD2014.jpg">
+							</div>
+
+							<div class="span4">
+								<h3>Chandler Gay '16</h3>
+								<h5>President</h3>
+								<img src="images/gay.jpg">
+							</div>
+
+						</div>
+						<div class="row-officer row-fluid">
+							<div class="span4">
+								<h3>Tom Markham '15</h3>
+								<h5>Vice President</h3>
+								<img src="images/tom.jpg">
+							</div>
+
+							<div class="span4">
+								<h3>Ben Kellogg '16</h3>
+								<h5>Offshore Accounts Mgr</h3>
+								<img src="images/Ben.jpg">
+							</div>
+							<div class="span4">
+								<h3>Raghav Gandotra '16</h3>
+								<h5>Hacker-in-Chief</h3>
+								<img src="images/Raghav.jpg">
+							</div>
+						</div>
+						<div class="row-officer row-fluid">
+							<div class="span2">
+
+							</div>
+							<div class="row-officer row-fluid">
+							<div class="span4">
+								<h3>Shaun Stojak '16</h3>
+								<h5>Social Viceroy</h3>
+								<img src="images/Stojak.jpg">
+							</div>
+							<div class="span4">
+								<h3>Sam Keller '17</h3>
+								<h5>Social Viceroy</h3>
+								<img src="images/Sammy.jpg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer"></div>
+
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.js"></script>
+		<script src="js/handlebars.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			render_template('templates/header.html', 'header');
+			render_template('templates/navbar.html', 'navbar', {page: 'team'});
+			render_template('templates/footer.html', 'footer');
+		</script>
+	</body>
+</html>
